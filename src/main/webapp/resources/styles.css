@@ -1,0 +1,58 @@
+/* Estilos gerais */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+}
+
+.panel {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.panel-title {
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+/* Estilos para a tabela */
+.data-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.data-table .ui-paginator {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.column, .actions-column {
+	padding: 10px;
+	text-align: center;
+	font-size: 1em;
+}
+
+.actions-column {
+	display: flex;
+	justify-content: center;
+	gap: 5px; /* Espaçamento entre os botões */
+}
+/* Responsividade */
+@media ( max-width : 768px) {
+	.data-table .column, .data-table .actions-column {
+		font-size: 0.9em;
+	}
+	.actions-column {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
